@@ -11,6 +11,7 @@
     max-width: 1608px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Navbar */
@@ -50,7 +51,6 @@
     color: #2678FA;
     border: 1px solid #2678FA;
     border-radius: 8px;
-    transition: ease .5s;
 }
 .signUp:hover{
     background-color: #2678FA;
@@ -59,7 +59,7 @@
 }
 
 /* Section1 */
-.hero{
+#hero{
     display: flex;
     text-align: start;
     margin-top: 64px;
@@ -86,7 +86,6 @@
     font-size: 20px;
     color: white;
     background: linear-gradient(to top right, #5c68ee, #14e8fd);
-    transition: ease .5s;
 }
 .hero--text--button:hover{
     opacity: .8;
@@ -96,4 +95,44 @@
     max-width: 1112px;
     width: 100%;
     margin-left: 243px;
+}
+
+/* Section 2 */
+#howToStart{
+    margin-top: 194px;
+}
+.howToStart--line{
+    width: 195px;
+    margin-right: 250px;
+    margin-bottom: 106PX;
+}
+.howToStart--title{
+    font-size: 50px;
+    color: #5712A6;
+    margin-bottom: 227px;
+}
+.howToStart--steps--list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: space-between;
+}
+.howToStart--steps--list--item{
+    max-width: 280px;
+    width: 100%;
+}
+.howToStart--steps--list--image{
+    width: 100%;
+}
+.howToStart--steps--list--title{
+    font-size: 30px;
+    color: #5712A6;
+    margin: 64px 0;
+}
+.howToStart--steps--list--description{
+    font-size: 20px;
+    color: #82809C;
+}
+
+#aboutUs{
+    margin-top: 318px;
 }
