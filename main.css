@@ -8,11 +8,12 @@
 }
 
 .container{
-    max-width: 1024px;
-    width: 90%;
+    max-width: 1608px;
+    width: 100%;
     margin: 0 auto;
 }
 
+/* Navbar */
 #header .container{
     padding: 24px 0;
     display: flex;
@@ -25,14 +26,17 @@
 }
 .navbar--list--item, .loginArea--list--item{
     display: inline;
-    margin: 0 24px;
+    margin-right: 74px;
     justify-content: center;
+}
+.loginArea--list--item{
+    margin-right: 42px;
 }
 .navbar--list--item--link{
     color: #82809C;
 }
 .brandingLogo{
-    max-width: 125px;
+    max-width: 176px;
     width: 100%;
 }
 .loginIcon{
@@ -46,4 +50,50 @@
     color: #2678FA;
     border: 1px solid #2678FA;
     border-radius: 8px;
+    transition: ease .5s;
+}
+.signUp:hover{
+    background-color: #2678FA;
+    color: white;
+    transition: ease .5s;
+}
+
+/* Section1 */
+.hero{
+    display: flex;
+    text-align: start;
+    margin-top: 64px;
+}
+.hero--text{
+    max-width: 400px;
+    width: 100%;
+    padding-top: 100px;
+}
+.hero--text--title{
+    font-size: 60px;
+    color: #5712A6;
+}
+.hero--text--description{
+    color: #82809C;
+    margin: 55px 0;
+    font-size: 18px
+}
+.hero--text--button{
+    cursor: pointer;
+    padding: 22px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to top right, #5c68ee, #14e8fd);
+    transition: ease .5s;
+}
+.hero--text--button:hover{
+    opacity: .8;
+    transition: ease .5s;
+}
+.hero--image--item{
+    max-width: 1112px;
+    width: 100%;
+    margin-left: 243px;
 }
