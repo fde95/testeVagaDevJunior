@@ -61,8 +61,12 @@
 /* Section1 */
 #hero{
     display: flex;
-    text-align: start;
     margin-top: 64px;
+    justify-content: space-between;
+}
+#hero .container{
+    text-align: start;
+    margin-left: 147px;
 }
 .hero--text{
     max-width: 400px;
@@ -94,7 +98,6 @@
 .hero--image--item{
     max-width: 1112px;
     width: 100%;
-    margin-left: 243px;
 }
 
 /* Section 2 */
@@ -133,6 +136,35 @@
     color: #82809C;
 }
 
+
+/* Section 3 */
 #aboutUs{
-    margin-top: 318px;
+    margin-top: 200px;
+    display: flex;
+    color: #82809C;
+}
+
+.aboutUs--content{
+    margin-right: 240px;
+}
+#aboutUs .container{
+    text-align: start;
+}
+.aboutUs--content--line{
+    margin-top: 114px;
+    margin-bottom: 164px;
+}
+.aboutUs--content--text{
+    font-weight: normal;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+.aboutUs--content--callToAction{
+    margin-bottom: 95px;
+    font-size: 30px;
+}
+.aboutUs--content--link{
+    font-size: 30px;
+    color: #2678FA;
+    font-weight: bold;
 }
