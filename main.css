@@ -206,7 +206,39 @@
     font-size: 30px;
     margin-top: 44px;
     display: block;
+    margin-bottom: 69px;
 }
 .safety--banner{
     margin-top: -270px;
+}
+
+/* Section 4 */
+#download{
+    background-image: url(./images/img-fundo-4-teste-programador.png);
+    padding: 305px 0;
+    background-size: cover;
+    text-align: start;
+    display: flex;
+}
+.download--content{
+    max-width: 750px;
+    display: block;
+    text-align: start;
+    margin-left: 925px;
+
+}
+.download--content--line{
+    margin-bottom: 90px;
+    width: 180px;
+    height: 15px;
+}
+.download--content--description{
+    font-size: 40px;
+    margin-bottom: 86px;
+    color: #5712A6;
+    font-weight: 500;
+}
+.download--content--image{
+    margin-right: 75px;
+    border-radius: 8px;
 }
