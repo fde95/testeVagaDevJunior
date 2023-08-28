@@ -168,3 +168,45 @@
     color: #2678FA;
     font-weight: bold;
 }
+
+/* Section 4 */
+#safety{
+    display: flex;
+    justify-content: space-between;
+}
+.safety--content--line{
+    margin-top: 433px;
+    margin-bottom: 118px;
+}
+.safety--content{
+    margin-left: 240px;
+}
+.safety--content--title{
+    font-size: 40px;
+    color: #5712A6;
+    margin-bottom: 158px;
+}
+.safety--content--description{
+    font-size: 30px;
+    color: #82809C;
+    text-align: start;
+}
+.safety--content--description--span{
+    font-weight: bold;
+    color: #5712A6;
+
+}
+.safety--content--description--span--line{
+    width: 70px;
+    height: 8px;
+    margin-left: 540px;
+}
+.safety--content--link{
+    color: #2678FA;
+    font-size: 30px;
+    margin-top: 44px;
+    display: block;
+}
+.safety--banner{
+    margin-top: -270px;
+}
