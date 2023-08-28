@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header .container{
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar--list{
+    display: flex;
+    align-items: center;
+}
+.navbar--list--item, .loginArea--list--item{
+    display: inline;
+    margin: 0 24px;
+    justify-content: center;
+}
+.navbar--list--item--link{
+    color: #82809C;
+}
+.brandingLogo{
+    max-width: 125px;
+    width: 100%;
+}
+.loginIcon{
+    width: 12px;
+}
+.loginArea--list--item--link{
+    color: #5712A6;
+}
+.signUp{
+    padding: 8px 22px;
+    color: #2678FA;
+    border: 1px solid #2678FA;
+    border-radius: 8px;
+}
