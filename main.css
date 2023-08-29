@@ -242,3 +242,89 @@
     margin-right: 75px;
     border-radius: 8px;
 }
+
+/* Section 5 */
+#register{
+    margin-top: 130px;
+    margin-bottom: 156px;
+}
+#register .container{
+    display: flex;
+    justify-content: space-around;
+}
+.register--link{
+    display: flex;
+    margin-bottom: 69px;
+}
+.register--link--title{
+    font-size: 50px;
+    margin-right: 140px;
+}
+.register--customer, .register--driver{
+    text-align: start;
+}
+
+/* Footer */
+#footer{
+    background-image: url(./images/fundo-footer-teste-programador.png.jpg);
+    padding: 168px 0 55px;
+    background-size: cover;
+}
+
+.submenu, .submenu--companyInfo{
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+.submenu--companyInfo{
+    margin-bottom: 110px;
+}
+
+.submenu--driveOn--list--item{
+    margin-bottom: 58px;
+}
+.submenu--driveOn--list--icon{
+    font-size: 40px;
+    margin-right: 18px;
+}
+.submenu--driveOn--list--link{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.submenu--driveOn--list--item--title{
+    font-size: 20px;
+}
+
+.submenu--aboutUs{
+    margin-right: 310px;
+}
+.submenu--company--title{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 54px;
+}
+.submenu--company--list--item{
+    margin-bottom: 40px;
+}
+.submenu--company--list--item--link{
+    font-size: 20px;
+    color: white;
+}
+
+
+.copy{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: white;
+    padding-top: 44px;
+    border-top: 1px solid white;
+}
+.copy--socialMedia--list--item{
+    display: inline;
+    margin-left: 50px;
+}
+.bi{
+    color: white;
+}
