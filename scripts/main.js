@@ -9,10 +9,12 @@ $(document).ready(function(){
             $(classeSeta).css({
                 'transform': 'scale(' + escalaSeta + ')',
                 'transition': '1s',
+                'color': '#5712A6'
             });
             $(classeLinha).css({
                 'transform': 'translate(' + deslocamentoLinha + 'px)',
-                'transition': '1.3s'
+                'transition': '1.3s',
+                'color': '#5712A6'
             });
         });
 

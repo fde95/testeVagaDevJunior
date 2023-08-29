@@ -262,8 +262,8 @@ body{
 }
 .register--link--title {
     font-size: 50px;
-    margin-right: 140px;
     color: #5712A6;
+    margin-right: 140px;
 }
 .register--customer, .register--driver {
     text-align: start;
