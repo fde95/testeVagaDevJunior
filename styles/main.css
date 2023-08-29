@@ -6,83 +6,85 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    overflow-x: hidden;
+}
 
-.container{
+.container {
     max-width: 1608px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-/* Navbar */
-#header .container{
+
+#header .container {
     padding: 24px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar--list{
+.navbar--list, .loginArea--list {
     display: flex;
     align-items: center;
 }
-.navbar--list--item, .loginArea--list--item{
-    display: inline;
+.navbar--list--item, .loginArea--list--item {
     margin-right: 74px;
-    justify-content: center;
 }
-.loginArea--list--item{
+.loginArea--list--item {
     margin-right: 42px;
 }
-.navbar--list--item--link{
+.navbar--list--item--link, .loginArea--list--item--link {
     color: #82809C;
 }
-.brandingLogo{
+.brandingLogo {
     max-width: 176px;
     width: 100%;
 }
-.loginIcon{
+.loginIcon {
     width: 12px;
 }
-.loginArea--list--item--link{
+.loginArea--list--item--link {
     color: #5712A6;
 }
-.signUp{
+.signUp {
     padding: 8px 22px;
     color: #2678FA;
     border: 1px solid #2678FA;
     border-radius: 8px;
 }
-.signUp:hover{
+.signUp:hover {
     background-color: #2678FA;
     color: white;
     transition: ease .5s;
 }
 
-/* Section1 */
-#hero{
+
+
+#hero {
     display: flex;
     margin-top: 64px;
     justify-content: space-between;
 }
-#hero .container{
+#hero .container {
     text-align: start;
     margin-left: 147px;
 }
-.hero--text{
+.hero--text {
     max-width: 400px;
     width: 100%;
     padding-top: 100px;
 }
-.hero--text--title{
+.hero--text--title {
     font-size: 60px;
     color: #5712A6;
 }
-.hero--text--description{
+.hero--text--description {
     color: #82809C;
     margin: 55px 0;
-    font-size: 18px
+    font-size: 18px;
 }
-.hero--text--button{
+.hero--text--button {
     cursor: pointer;
     padding: 22px 40px;
     border: none;
@@ -91,229 +93,227 @@
     color: white;
     background: linear-gradient(to top right, #5c68ee, #14e8fd);
 }
-.hero--text--button:hover{
+.hero--text--button:hover {
     opacity: .8;
     transition: ease .5s;
 }
-.hero--image--item{
+.hero--banner--image {
     max-width: 1112px;
     width: 100%;
 }
 
-/* Section 2 */
-#howToStart{
+
+
+#howToStart {
     margin-top: 194px;
 }
-.howToStart--line{
+.howToStart--line {
     width: 195px;
     margin-right: 250px;
-    margin-bottom: 106PX;
+    margin-bottom: 106px;
 }
-.howToStart--title{
+.howToStart--title {
     font-size: 50px;
     color: #5712A6;
     margin-bottom: 227px;
 }
-.howToStart--steps--list{
+.howToStart--steps--list {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: repeat(4, 300px);
+    gap: 30px;
     justify-content: space-between;
 }
-.howToStart--steps--list--item{
+.howToStart--steps--list--item {
     max-width: 280px;
     width: 100%;
 }
-.howToStart--steps--list--image{
+.howToStart--steps--list--image {
     width: 100%;
 }
-.howToStart--steps--list--title{
+.howToStart--steps--list--title {
     font-size: 30px;
     color: #5712A6;
     margin: 64px 0;
 }
-.howToStart--steps--list--description{
+.howToStart--steps--list--description {
     font-size: 20px;
     color: #82809C;
 }
 
 
-/* Section 3 */
-#aboutUs{
+
+#aboutUs {
     margin-top: 200px;
     display: flex;
     color: #82809C;
 }
-
-.aboutUs--content{
+.aboutUs--content {
     margin-right: 240px;
 }
-#aboutUs .container{
+#aboutUs .container {
     text-align: start;
 }
-.aboutUs--content--line{
+.aboutUs--content--line {
     margin-top: 114px;
     margin-bottom: 164px;
 }
-.aboutUs--content--text{
+.aboutUs--content--text {
     font-weight: normal;
     margin-bottom: 60px;
     font-size: 30px;
 }
-.aboutUs--content--callToAction{
+.aboutUs--content--callToAction {
     margin-bottom: 95px;
     font-size: 30px;
 }
-.aboutUs--content--link{
+.aboutUs--content--link {
     font-size: 30px;
     color: #2678FA;
     font-weight: bold;
 }
 
-/* Section 4 */
-#safety{
+
+
+#safety {
     display: flex;
     justify-content: space-between;
 }
-.safety--content--line{
+.safety--content--line {
     margin-top: 433px;
     margin-bottom: 118px;
 }
-.safety--content{
+.safety--content {
     margin-left: 240px;
 }
-.safety--content--title{
+.safety--content--title {
     font-size: 40px;
     color: #5712A6;
     margin-bottom: 158px;
 }
-.safety--content--description{
+.safety--content--description {
     font-size: 30px;
     color: #82809C;
     text-align: start;
 }
-.safety--content--description--span{
+.safety--content--description--span {
     font-weight: bold;
     color: #5712A6;
-
 }
-.safety--content--description--span--line{
+.safety--content--description--span--line {
     width: 70px;
     height: 8px;
     margin-left: 540px;
 }
-.safety--content--link{
+.safety--content--link {
     color: #2678FA;
     font-size: 30px;
     margin-top: 44px;
     display: block;
     margin-bottom: 69px;
 }
-.safety--banner{
+.safety--banner {
     margin-top: -270px;
 }
 
-/* Section 4 */
-#download{
+
+
+#download {
     background-image: url(../images/img-fundo-4-teste-programador.png);
     padding: 305px 0;
     background-size: cover;
     text-align: start;
     display: flex;
 }
-.download--content{
+.download--content {
     max-width: 750px;
     display: block;
     text-align: start;
     margin-left: 925px;
-
 }
-.download--content--line{
+.download--content--line {
     margin-bottom: 90px;
     width: 180px;
     height: 15px;
 }
-.download--content--description{
+.download--content--description {
     font-size: 40px;
     margin-bottom: 86px;
     color: #5712A6;
     font-weight: 500;
 }
-.download--content--image{
+.download--content--image {
     margin-right: 75px;
     border-radius: 8px;
 }
 
-/* Section 5 */
-#register{
+
+
+#register {
     margin-top: 130px;
     margin-bottom: 156px;
 }
-#register .container{
+#register .container {
     display: flex;
     justify-content: space-around;
 }
-.register--link{
+.register--link {
     display: flex;
     margin-bottom: 69px;
 }
-.register--link--title{
+.register--link--title {
     font-size: 50px;
     margin-right: 140px;
 }
-.register--customer, .register--driver{
+.register--customer, .register--driver {
     text-align: start;
 }
 
-/* Footer */
-#footer{
+
+
+#footer {
     background-image: url(../images/fundo-footer-teste-programador.png.jpg);
     padding: 168px 0 55px;
     background-size: cover;
 }
-
-.submenu, .submenu--companyInfo{
+.submenu, .submenu--companyInfo {
     text-align: start;
     display: flex;
     justify-content: space-between;
 }
-.submenu--companyInfo{
+.submenu--companyInfo {
     margin-bottom: 110px;
 }
-
-.submenu--driveOn--list--item{
+.submenu--driveOn--list--item {
     margin-bottom: 58px;
 }
-.submenu--driveOn--list--icon{
+.submenu--driveOn--list--icon {
     font-size: 40px;
     margin-right: 18px;
 }
-.submenu--driveOn--list--link{
+.submenu--driveOn--list--link {
     display: flex;
     color: white;
     align-items: center;
 }
-.submenu--driveOn--list--item--title{
+.submenu--driveOn--list--item--title {
     font-size: 20px;
 }
-
-.submenu--aboutUs{
+.submenu--aboutUs {
     margin-right: 310px;
 }
-.submenu--company--title{
+.submenu--company--title {
     color: white;
     font-size: 30px;
     margin-bottom: 54px;
 }
-.submenu--company--list--item{
+.submenu--company--list--item {
     margin-bottom: 40px;
 }
-.submenu--company--list--item--link{
+.submenu--company--list--item--link {
     font-size: 20px;
     color: white;
 }
-
-
-.copy{
+.copy {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -321,10 +321,182 @@
     padding-top: 44px;
     border-top: 1px solid white;
 }
-.copy--socialMedia--list--item{
+.copy--socialMedia--list--item {
     display: inline;
     margin-left: 50px;
 }
-.bi{
+.bi {
     color: white;
+}
+
+@media (min-width:1200px) and (max-width:1680px){
+    .container {
+        max-width: 1100px;
+    }
+    #hero .container {
+        margin-left: 81px;
+    }
+    .hero--text {
+        padding-top: 40px;
+    }
+    .hero--text--title {
+        font-size: 50px;
+    }
+    .hero--text--description {
+        margin: 40px 0;
+        font-size: 16px;
+    }
+    .hero--text--button {
+        padding: 20px 35px;
+        font-size: 16px;
+    }
+    .hero--banner--image{
+        width: 700px;
+    }
+    #howToStart {
+        margin-top: 150px;
+    }
+    .howToStart--line {
+        margin-right: 160px;
+        margin-bottom: 80px;
+    }
+    .howToStart--title {
+        font-size: 40px;
+        margin-bottom: 227px;
+    }
+    .howToStart--steps--list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .howToStart--steps--list--title {
+        font-size: 30px;
+        margin: 64px 0;
+    }
+    .howToStart--steps--list--description {
+        font-size: 18px;
+    }
+    #aboutUs {
+        margin-top: 150px;
+        display: flex;
+        color: #82809C;
+    }
+    .aboutUs--content {
+        margin-right: 81px;
+    }
+    .aboutUs--content--line {
+        margin-top: 114px;
+        margin-bottom: 100px;
+    }
+    .aboutUs--content--text {
+        font-size: 20px;
+    }
+    .aboutUs--content--callToAction {
+        font-size: 20px;
+    }
+    .aboutUs--content--link {
+        font-size: 20px;
+    }
+    .aboutUs--banner--image{
+        width: 600px;
+    }
+    .safety--content--line {
+        margin-top: 433px;
+        margin-bottom: 118px;
+    }
+    .safety--content {
+        margin-left: 81px;
+    }
+    .safety--content--title {
+        font-size: 38px;
+        margin-bottom: 80px;
+    }
+    .safety--content--description {
+        font-size: 24px;
+    }
+    .safety--content--description--span {
+        font-weight: bold;
+        color: #5712A6;
+    }
+    .safety--content--description--span--line {
+        width: 50px;
+        margin-left: 520px;
+    }
+    .safety--content--link {
+        color: #2678FA;
+        font-size: 25px;
+        margin-top: 44px;
+        display: block;
+        margin-bottom: 69px;
+    }
+    .safety--banner--image{
+        width: 600px;
+    }
+    .safety--banner {
+        margin-top: -100px;
+    }
+    #download {
+        background-image: url(../images/img-fundo-4-teste-programador.png);
+        padding: 200px 0 ;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .download--content {
+        margin-left: 600px;
+    }
+    .download--content--line {
+        margin-bottom: 30px;
+        width: 130px;
+        height: 10px;
+    }
+    .download--content--description {
+        font-size: 30px;
+    }
+    .download--content--image {
+        margin-right: 40px;
+        border-radius: 8px;
+    }
+    #register {
+        margin-top: 80px;
+        margin-bottom: 130px;
+    }
+    .register--link {
+        display: flex;
+        margin-bottom: 69px;
+    }
+    .register--link--title {
+        font-size: 40px;
+        margin-right: 60px;
+    }
+    .register--customer, .register--driver {
+        text-align: start;
+    }
+    .submenu--companyInfo {
+        margin-bottom: 80px;
+    }
+    .submenu--driveOn--list--item {
+        margin-bottom: 48px;
+    }
+    .submenu--driveOn--list--icon {
+        font-size: 30px;
+        margin-right: 18px;
+    }
+    .submenu--driveOn--list--item--title {
+        font-size: 16px;
+    }
+    .submenu--aboutUs {
+        margin-right: 130px;
+    }
+    .submenu--company--title {
+        font-size: 25px;
+        margin-bottom: 44px;
+    }
+    .submenu--company--list--item {
+        margin-bottom: 25px;
+    }
+    .submenu--company--list--item--link {
+        font-size: 16px;
+    }
+    .copy {
+        font-size: 18px;
+    }
 }

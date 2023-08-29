@@ -3,45 +3,32 @@ $(document).ready(function(){
         delay: 300,
         once: true,
     });
-    $('.register--driver--movement').mouseenter(function(){
-        $('.register--driver--movement--seta').css({
-            'scale' : '.8' ,
-            'transition' : '1s',
-        });
-        $('.register--driver--movement--line').css({
-            'transform': 'translate(200px)',
-            'transition' : '1.3s'
-        });
-    });
-    $('.register--link').mouseleave(function(){
-        $('.register--driver--movement--seta').css({
-            'scale' : '1' ,
-            'transition' : '1s',
-        });
-        $('.register--driver--movement--line').css({
-            'transform': 'translate(0)',
-            'transition' : '1.3s'
-        });
-    });
 
-    $('.register--customer--movement').mouseenter(function(){
-        $('.register--customer--movement--seta').css({
-            'scale' : '.8' ,
-            'transition' : '1s',
+    function aplicarAnimacao(elemento, classeSeta, classeLinha, escalaSeta, deslocamentoLinha) {
+        $(elemento).mouseenter(function(){
+            $(classeSeta).css({
+                'transform': 'scale(' + escalaSeta + ')',
+                'transition': '1s',
+            });
+            $(classeLinha).css({
+                'transform': 'translate(' + deslocamentoLinha + 'px)',
+                'transition': '1.3s'
+            });
         });
-        $('.register--customer--movement--line').css({
-            'transform': 'translate(200px)',
-            'transition' : '1.3s'
+
+        $(elemento).mouseleave(function(){
+            $(classeSeta).css({
+                'transform': 'scale(1)',
+                'transition': '1s',
+            });
+            $(classeLinha).css({
+                'transform': 'translate(0)',
+                'transition': '1.3s'
+            });
         });
-    });
-    $('.register--link').mouseleave(function(){
-        $('.register--customer--movement--seta').css({
-            'scale' : '1' ,
-            'transition' : '1s',
-        });
-        $('.register--customer--movement--line').css({
-            'transform': 'translate(0)',
-            'transition' : '1.3s'
-        });
-    });
-})
+    }
+
+    aplicarAnimacao('.register--driver--movement', '.register--driver--movement--seta', '.register--driver--movement--line', '0.8', '20');
+    aplicarAnimacao('.register--customer--movement', '.register--customer--movement--seta', '.register--customer--movement--line', '0.8', '20');
+    aplicarAnimacao('.safety--content--description--span', '', '.safety--content--description--span--line', '0.8', '20');
+});
